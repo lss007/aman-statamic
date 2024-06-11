@@ -1,0 +1,10 @@
+title: Newsletter
+fields:
+  -
+    handle: email
+    field:
+      input_type: email
+      type: text
+      display: Email
+      validate:
+        - required

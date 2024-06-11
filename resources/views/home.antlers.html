@@ -1,0 +1,86 @@
+  <!-- ======= Hero Section ======= -->
+  {{ partial:hero }}
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    {{ about_us:entries }}
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>{{ title }}</h2>
+            <p>{{ heading }} </p>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                {{ description  }} 
+              </p>
+              {{# replicator list items #}}
+              <ul>
+                {{ replicator }}
+                  <li><i class="ri-check-double-line"></i> {{ list }}</li>
+                {{ /replicator }}
+              </ul>
+              {{# replicator list items end #}}
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                {{ description_2 }} 
+              </p>
+              <a href="{{ page_link }}" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    {{ /about_us:entries }}
+    <!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    {{ partial:sections/counts }}
+    <!-- End Counts Section -->
+
+    <!-- ======= About Video Section ======= -->
+    {{ partial:sections/about_video }}
+    <!-- End About Video Section -->
+
+    <!-- ======= Clients Section ======= -->
+    {{ partial:sections/clients }}
+    <!-- End Clients Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    {{ partial:sections/testimonials }}
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Services Section ======= -->
+    {{ partial:sections/services }}
+    <!-- End Sevices Section -->
+
+    <!-- ======= Cta Section ======= -->
+    {{ partial:sections/cta }}
+    <!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    {{ partial:sections/portfolio }}
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    {{ partial:sections/team }}
+    <!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    {{ partial:sections/pricing }}
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    {{ partial:sections/faq }}
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    {{ partial:sections/contact }}
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->

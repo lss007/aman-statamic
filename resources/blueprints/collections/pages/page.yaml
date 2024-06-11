@@ -1,0 +1,148 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - strikethrough
+                - code
+                - codeblock
+              container: assets
+              display: Content
+              folder: img
+              restrict: true
+              automatic_links: true
+              heading_anchors: true
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: code_field
+            field:
+              type: code
+              display: Code
+          -
+            handle: description
+            field:
+              type: markdown
+              display: Description
+          -
+            handle: description_2
+            field:
+              type: markdown
+              display: Description_2
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+          -
+            handle: replicator
+            field:
+              type: replicator
+              display: Replicator
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    lists:
+                      display: Lists
+                      icon: addon-boxes-stack
+                      fields:
+                        -
+                          handle: list
+                          field:
+                            type: text
+                            display: List
+          -
+            handle: page_link
+            field:
+              type: link
+              display: 'Page Link'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: Seo
+        fields:
+          -
+            handle: meta_title
+            field:
+              character_limit: 60
+              type: text
+              display: 'Meta Title'
+          -
+            handle: meta_description
+            field:
+              character_limit: '160'
+              type: textarea
+              display: 'Meta Description'
+          -
+            handle: keywords
+            field:
+              type: textarea
+              display: keywords
+title: Page

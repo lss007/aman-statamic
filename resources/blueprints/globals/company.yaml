@@ -1,0 +1,72 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Site Setting'
+        fields:
+          -
+            handle: site_name
+            field:
+              type: text
+              display: 'SIte Name'
+          -
+            handle: footer_logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Footer Logo'
+          -
+            handle: top_logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Top Logo'
+          -
+            handle: address
+            field:
+              container: mydoc
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - strikethrough
+                - code
+                - codeblock
+              type: markdown
+              display: Address
+          -
+            handle: contact_information
+            field:
+              type: array
+              display: Contact_information
+          -
+            handle: copyright
+            field:
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - code
+              type: markdown
+              display: Copyright
+          -
+            handle: disclaimer
+            field:
+              type: textarea
+              display: Disclaimer
+          -
+            handle: flair
+            field:
+              type: text
+              display: Flair

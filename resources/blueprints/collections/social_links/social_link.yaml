@@ -1,0 +1,52 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Social account link'
+        instructions: 'Add here social account link'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: icon
+            field:
+              options:
+                twitter: 'bx bxl-twitter'
+                facebook: 'bx bxl-facebook'
+                instagram: 'bx bxl-instagram'
+                skype: 'bx bxl-skype'
+                linkedin: 'linkebx bxl-linkedin'
+              type: select
+              display: Icon
+              instructions: 'Select Option'
+          -
+            handle: link
+            field:
+              type: link
+              display: Link
+              listable: true
+          -
+            handle: class_name
+            field:
+              placeholder: 'Eg. twitter, facebook, instagram, linkedin , google-plus'
+              type: text
+              display: 'Class Name'
+              instructions: 'Enter Here Class Name'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: 'Social Link'

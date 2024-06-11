@@ -1,0 +1,17 @@
+title: Company
+data:
+  site_name: 'Demo Site'
+  footer_logo: chef_left_image-2022-12-15-02-59-31-5537.png
+  top_logo: chef_left_image-2022-12-15-02-59-31-5537.png
+  address: |-
+    **A108 Adam Street**
+
+    **New York, NY 535022**
+
+    **United States**
+  contact_information:
+    phone: '+1 5589 55488 55'
+    email: info@example.com
+  copyright: '© Copyright [**Demo Site**](https://example.com). All Rights Reserved'
+  disclaimer: 'Tamen quem nulla quae legam multos aute sint culpa legam noster magna'
+  flair: 'Designed by BootstrapMade'

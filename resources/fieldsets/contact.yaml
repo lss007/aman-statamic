@@ -1,0 +1,29 @@
+title: Contact
+fields:
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+  -
+    handle: email
+    field:
+      input_type: email
+      type: text
+      display: Email
+  -
+    handle: subject
+    field:
+      type: text
+      display: Subject
+  -
+    handle: message
+    field:
+      type: textarea
+      display: Message
+  -
+    handle: phone
+    field:
+      input_type: tel
+      type: text
+      display: Phone

@@ -1,0 +1,51 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: replicator
+            field:
+              type: replicator
+              display: Replicator
+              instructions: 'Client Reviews'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            type: text
+                            display: Name
+                        -
+                          handle: position
+                          field:
+                            type: text
+                            display: Position
+                        -
+                          handle: image
+                          field:
+                            container: assets
+                            type: assets
+                            display: Image
+                            max_files: 1
+                        -
+                          handle: reviews
+                          field:
+                            type: textarea
+                            display: Reviews

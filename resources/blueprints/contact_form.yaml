@@ -1,0 +1,27 @@
+title: Contact Form
+fields:
+  - handle: name
+    field:
+      type: text
+      display: Name
+      validate: required
+  - handle: email
+    field:
+      type: text
+      display: Email
+      validate: required|email
+  - handle: subject
+    field:
+      type: text
+      display: Subject
+      validate: required
+  - handle: phone
+    field:
+      type: text
+      display: Phone
+      validate: required
+  - handle: message
+    field:
+      type: textarea
+      display: Message
+      validate: required

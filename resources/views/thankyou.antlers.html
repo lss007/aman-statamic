@@ -1,0 +1,34 @@
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs bg-light py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="text-primary">{{ title }}</h2>
+          <ol class="breadcrumb">
+            {{# <li class="breadcrumb-item"><a href="">Home</a></li> #}}
+            <li class="breadcrumb-item active">{{ title }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+    <section class="inner-page pb-5">
+      <div class="container">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h2 class="card-title text-secondary text-center">{{ heading }}</h2>
+            {{ form:create handle="contact" }}
+                    {{ if success }}
+                          <div class="alert alert-success alert-dismissible fade show" role="alert">
+                              <strong>Success!</strong> {{ success }}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                    {{ /if }}
+          {{ /form:create }}
+            <p class="card-text text-center">{{ content | widont }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  

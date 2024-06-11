@@ -1,0 +1,86 @@
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ title }}</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>{{ title }}</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div class="container">
+      <h1 class="text-center pb-4 mb-5">{{ title }}</h1>
+      {{# laravel style #}}
+      {{ form:create in="contact" }}
+        {{ if errors }}
+          <p>Oops, here's what went wrong:</p>
+          {{ errors }}
+            <div class="bg-danger alert text-white ">
+              {{ value }}
+            </div>
+          {{ /errors }}
+        {{ /if }}
+        {{ if errors }}
+          <div class="bg-danger alert text-white ">
+            Oops, here's what went wrong:
+          </div>
+        {{ /if }}
+        {{ if success }}
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> {{ success }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {{ /if }}
+        <div class="row gy-2 gx-md-3">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control {{ if error:name }} is-invalid {{/if}}" id="name"
+              placeholder="Your Name">
+            {{ if error:name }}
+              <span class="text-danger"> {{ error:name }} </span>
+            {{ /if }}
+          </div>
+          <div class="col-md-6 form-group">
+            <input type="email" class="form-control {{ if error:email }} is-invalid {{/if}}" name="email" id="email"
+              placeholder="Your Email" value="{{ old:email }}">
+            {{ if error:email }}
+              <span class="text-danger"> {{ error:email }} </span>
+            {{ /if }}
+          </div>
+          <div class="form-group col-6">
+            <input type="text" class="form-control {{ if error:subject }} is-invalid {{/if}}" name="subject"
+              id="subject" placeholder="Subject">
+            {{ if error:subject }}
+              <span class="text-danger"> {{ error:subject }} </span>
+            {{ /if }}
+          </div>
+          <div class="form-group col-6">
+            <input type="tel" class="form-control {{ if error:phone }} is-invalid {{/if}}" name="phone" id="phone"
+              placeholder="Phone">
+            {{ if error:phone }}
+              <span class="text-danger"> {{ error:phone }} </span>
+            {{ /if }}
+          </div>
+          <div class="form-group col-12">
+            <textarea class="form-control {{ if error:message }} is-invalid {{/if}}" name="message" rows="5"
+              placeholder="Message"></textarea>
+            {{ if error:message }}
+              <span class="text-danger">
+                {{ error:message }}
+              </span>
+            {{ /if }}
+          </div>
+          <div class="text-center col-12 "><button class="primarybtn" type="submit">Send Message</button></div>
+        </div>
+      {{ /form:create }}
+
+
+    </div>
+  </section>
+
+</main>

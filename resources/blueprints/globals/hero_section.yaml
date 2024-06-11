@@ -1,0 +1,48 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: button
+            field:
+              type: text
+              display: Button
+          -
+            handle: link
+            field:
+              type: link
+              display: Link
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+          -
+            handle: boxes
+            field:
+              type: replicator
+              display: Boxes
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: icon_boxes
+                          field:
+                            type: array
+                            display: 'Icon boxes'    

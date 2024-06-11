@@ -1,0 +1,55 @@
+title: Testimonials
+data:
+  title: Testimonials
+  heading: 'What Our Clients Say'
+  replicator:
+    -
+      id: lx0b9s1z
+      name: 'Sara Wilsson'
+      position: Designer
+      profile:
+        - img/testimonials/testimonials-1.jpg
+      reviews: "Working with [Your Company Name] was a game-changer for us. They made the home buying process smooth and stress-free. We couldn't be happier with our new home"
+      type: new_set
+      enabled: true
+      image: img/testimonials/testimonials-1.jpg
+    -
+      id: lx0b9uf4
+      name: 'Jena Karlis'
+      position: 'Store Owner'
+      profile:
+        - img/testimonials/testimonials-2.jpg
+      reviews: 'The team at [Your Company Name] was professional, knowledgeable, and always available to answer our questions. Their expertise in the market helped us find the perfect propert'
+      type: new_set
+      enabled: true
+      image: img/testimonials/testimonials-2.jpg
+    -
+      id: lx0b9w4n
+      name: 'Matt Brandon'
+      position: Freelancer
+      profile:
+        - img/testimonials/testimonials-3.jpg
+      reviews: 'From start to finish, the service provided by [Your Company Name] was top-notch. Their attention to detail and commitment to our needs made all the difference'
+      type: new_set
+      enabled: true
+      image: img/testimonials/testimonials-3.jpg
+    -
+      id: lx0b9xcf
+      name: 'Saul Goodman'
+      position: 'Ceo & Founde'
+      profile:
+        - img/testimonials/testimonials-4.jpg
+      reviews: 'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.'
+      type: new_set
+      enabled: true
+      image: img/testimonials/testimonials-4.jpg
+    -
+      id: lx0behda
+      name: 'John Larson'
+      position: Entrepreneur
+      profile:
+        - img/testimonials/testimonials-5.jpg
+      reviews: 'Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.'
+      type: new_set
+      enabled: true
+      image: img/testimonials/testimonials-5.jpg

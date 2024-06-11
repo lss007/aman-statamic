@@ -1,0 +1,11 @@
+title: 'Contact Us'
+email:
+-
+    id: lx32e8z2
+    to: souboifraheuro-6985@yopmail.com
+    cc: souboifraheuro-6985@yopmail.com
+    from: '{{email}}'
+    subject: 'Thank You for Contacting Us'
+    html: emails/custom_notification
+    markdown: true
+    mailer: smtp

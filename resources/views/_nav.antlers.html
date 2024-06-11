@@ -1,0 +1,37 @@
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <h1 class="logo"><a href="{{ '/' }}">{{ company:site_name }} </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="javascript:void(0)" class="logo"> <img src="{{ company:top_logo }}" alt="{{ company:top_logo:alt }}"
+                class="img-fluid"></a>
+        <nav id="navbar" class="navbar">
+            <ul>
+                {{ nav:collection:pages include_home="true" }}
+                    {{ if published }}
+                        <li class="{{ is_current ? 'active' : '' }} {{ children ? 'dropdown' : '' }}">
+                            <a class="nav-link scrollto {{ is_current ? 'active' : '' }}" href="{{ url }}">
+                                {{ title }}
+                                {{ children ? '<i class="bi bi-chevron-down"></i>' : '' }}
+                            </a>
+                            {{ if children }}
+                                <ul>
+                                    {{ children }}
+                                        <li><a href="{{ url }}">{{ title }}</a></li>
+                                    {{ /children }}
+                                </ul>
+                            {{ /if }}
+                        </li>
+                    {{ /if }}
+                {{ /nav:collection:pages }}
+            </ul>
+            <form class="d-flex ms-3" action="/search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q"
+                    value="{{ get:q }}">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header>

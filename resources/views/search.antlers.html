@@ -1,0 +1,37 @@
+<main id="main">
+    <!-- Breadcrumbs Section -->
+    <section class="breadcrumbs py-4 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="text-primary">Search Results</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Search Results</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inner Page Section -->
+    <section class="inner-page py-5">
+        <div class="container">
+            {{ search:results as="results" }}
+                {{ if results }}
+                    <ul class="list-group">
+                        {{ results }}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="{{ url }}" class="text-decoration-none text-dark">
+                                    <h5 class="mb-1">{{ title }}</h5>
+                                    <small class="text-muted">{{ excerpt }}</small>
+                                </a>
+                                <span class="badge bg-primary rounded-pill">New</span>
+                            </li>
+                        {{ /results }}
+                    </ul>
+                {{ else }}
+                    <p class="text-muted">No results found for your search query. Please try different keywords.</p>
+                {{ /if }}
+            {{ /search:results }}
+        </div>
+    </section>
+</main>

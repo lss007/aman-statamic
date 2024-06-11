@@ -1,0 +1,39 @@
+title: 'Hero Section'
+data:
+  title: 'Demo Site title'
+  heading: 'We are team of talented Developer'
+  button: 'Get Started'
+  link: 'entry::365704fc-bb34-4ee4-ae0c-feae4cf7efae'
+  boxes:
+    -
+      id: lx07yc0g
+      icon_boxes:
+        icon: ri-stack-line
+        title: 'Lorem Ipsum'
+        description: 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi'
+      type: new_set
+      enabled: true
+    -
+      id: lx080pfb
+      icon_boxes:
+        icon: ri-palette-line
+        title: 'Sed ut perspiciatis'
+        description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+      type: new_set
+      enabled: true
+    -
+      id: lx080o7k
+      icon_boxes:
+        icon: ri-command-line
+        title: 'Magni Dolores'
+        description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<'
+      type: new_set
+      enabled: true
+    -
+      id: lx083spi
+      icon_boxes:
+        icon: ri-fingerprint-line
+        title: 'Nemo Enim'
+        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis'
+      type: new_set
+      enabled: true

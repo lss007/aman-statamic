@@ -1,0 +1,26 @@
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 text-center">
+                <h1> {{ hero_section:title }} </h1>
+                <h2> {{ hero_section:heading }}</h2>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#about" class="btn-get-started scrollto">{{ hero_section:button }} </a>
+        </div>
+        <div class="row icon-boxes">
+            {{ hero_section:boxes }}
+            {{#  Replicator   #}}
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in"
+                data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="{{ icon_boxes:icon }} "></i></div>
+                    <h4 class="title"><a href="">{{ icon_boxes:title }} </a></h4>
+                    <p class="description">{{ icon_boxes:description }}</p>
+                </div>
+            </div>
+            {{ /hero_section:boxes }}
+        </div>
+    </div>
+</section>
